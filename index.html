@@ -24,10 +24,24 @@
         }
     </style>
 </head>
+<!-- 
+    -- px-4 py-3 md:px-8 md:py-6 2xl:px-[140px] 2xl:py-[42px] 
+-->
 
-<body class="font-sora">
-    <header>
-        <nav></nav>
+<body class="font-sora max-w-[1600px] mx-auto border">
+    <header class=" bg-secondary">
+        <nav>
+            <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-6 2xl:px-[140px] 2xl:py-[42px]">
+                <!-- mobile screen logo -->
+                <div class="lg:hidden">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <!-- mobile screen bars -->
+                <div class="lg:hidden">
+                    <p><i class="fa-solid fa-bars text-4xl text-accent"></i></p>
+                </div>
+            </div>
+        </nav>
 
         <!-- section -->
         <section></section>
