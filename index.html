@@ -21,16 +21,18 @@
             --font-sora: "Sora", sans-serif; 
             --color-accent: #179800;
             --color-secondary: #EFEBE3;
+            --color-textPrimary: #111111;
         }
     </style>
 </head>
 <!-- 
     -- px-4 py-3 md:px-8 md:py-6 2xl:px-[140px]
+    -- mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]
 -->
 
 <body class="font-sora max-w-[1600px] mx-auto">
     <header class=" bg-secondary">
-        <nav class="pb-[48px] 2xl:pb-[100px]">
+        <nav>
             <div
                 class="flex justify-between items-center px-4 py-3 md:px-8 md:py-6 2xl:px-[140px] 2xl:py-[42px] border-b border-accent lg:border-none">
                 <!-- mobile screen logo -->
@@ -89,9 +91,62 @@
         <!-- end hero section -->
     </header>
     <main>
-        <!-- section -->
-        <section></section>
-        <!-- end section -->
+        <!-- service section -->
+        <section class="mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]">
+            <div>
+                <h1 class="text-2xl 2xl:text-4xl mb-8 2xl:mb-12 font-semibold text-accent">Services</h1>
+            </div>
+            <div class="flex flex-col gap-5 2xl:gap-6 md:flex-row">
+                <div class="bg-secondary p-[26px] 2xl:p-8 rounded-xl 2xl:rounded-2xl">
+                    <div class="mb-5 2xl:mb-6">
+                        <img class="mx-auto p-[25px] bg-white rounded-full" src="assets/images/service.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl 2xl:text-2xl mb-2.5 2xl:mb-3 font-semibold">24/7 Services</h3>
+                        <p
+                            class="md:text-left lg:text-center text-base md:text-sm lg:text-base 2xl:text-xl font-light text-textPrimary/70">
+                            Lorem
+                            ipsum dolor sit
+                            amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="bg-secondary p-[26px] 2xl:p-8 rounded-xl 2xl:rounded-2xl">
+                    <div class="mb-5 2xl:mb-6">
+                        <img class="mx-auto p-[25px] bg-white rounded-full" src="assets/images/delivery.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl 2xl:text-2xl mb-2.5 2xl:mb-3 font-semibold">24/7 Services</h3>
+                        <p
+                            class="md:text-left lg:text-center text-base md:text-sm lg:text-base 2xl:text-xl font-light text-textPrimary/70">
+                            Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+                <div class="bg-secondary p-[26px] 2xl:p-8 rounded-xl 2xl:rounded-2xl">
+                    <div class="mb-5 2xl:mb-6">
+                        <img class="mx-auto p-[25px] bg-white rounded-full" src="assets/images/healthy.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl 2xl:text-2xl mb-2.5 2xl:mb-3 font-semibold">24/7 Services</h3>
+                        <p
+                            class="md:text-left lg:text-center text-base md:text-sm lg:text-base 2xl:text-xl font-light text-textPrimary/70">
+                            Lorem ipsum dolor sit amet,
+                            consectetur
+                            adipiscing
+                            elit, sed do
+                            eiusmod tempor incididunt</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end service section -->
 
         <!-- section -->
         <section></section>
