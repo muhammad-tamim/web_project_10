@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nature's platter</title>
     <!-- FavIcon -->
-    <link rel="shortcut icon" href="assets/images/logo-header.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Google Fonts -->
@@ -25,10 +25,10 @@
     </style>
 </head>
 <!-- 
-    -- px-4 py-3 md:px-8 md:py-6 2xl:px-[140px] 2xl:py-[42px] 
+    -- px-4 py-3 md:px-8 md:py-6 2xl:px-[140px]
 -->
 
-<body class="font-sora max-w-[1600px] mx-auto border">
+<body class="font-sora max-w-[1600px] mx-auto">
     <header class=" bg-secondary">
         <nav>
             <div class="flex justify-between items-center px-4 py-3 md:px-8 md:py-6 2xl:px-[140px] 2xl:py-[42px]">
@@ -39,6 +39,32 @@
                 <!-- mobile screen bars -->
                 <div class="lg:hidden">
                     <p><i class="fa-solid fa-bars text-4xl text-accent"></i></p>
+                </div>
+
+                <!-- for large devices -->
+                <div class=>
+                    <img class="cursor-pointer" src="assets/images/logo-header.png" alt="">
+                </div>
+                <div>
+                    <ul class="flex gap-4 2xl:gap-8 2xl:text-xl">
+                        <li><a href="" class="hover:text-accent">Product</a></li>
+                        <li><a href="" class="hover:text-accent">Services</a></li>
+                        <li><a href="" class="hover:text-accent">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-3 xl:gap-6">
+                    <div class="flex gap-3 2xl:gap-6">
+                        <p><i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-accent"></i></p>
+                        <p><i class="fa-solid fa-cart-shopping cursor-pointer hover:text-accent"></i></p>
+                    </div>
+                    <div class="flex gap-1 xl:gap-3">
+                        <div><button
+                                class="cursor-pointer border border-accent rounded-lg text-center px-[15px] py-1.5 2xl:px-[30px] 2xlpy-2.5 2xl:text-xl hover:bg-accent hover:text-white">Login</button>
+                        </div>
+                        <div><button
+                                class="cursor-pointer bg-accent border border-accent text-white rounded-lg text-center px-[15px] py-1.5 2xl:px-[30px] 2xlpy-2.5 2xl:text-xl">Register</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
