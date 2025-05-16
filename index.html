@@ -9,16 +9,17 @@
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/2188e87f2e.js" crossorigin="anonymous"></script>
     <!-- Custom Tailwind CSS -->
     <style type="text/tailwindcss">
         @theme {
             --font-sora: "Sora", sans-serif; 
+            --font-adlam: "ADLaM Display", sans-serif; 
             --color-accent: #179800;
             --color-secondary: #EFEBE3;
             --color-textPrimary: #111111;
@@ -149,9 +150,36 @@
         </section>
         <!-- end service section -->
 
-        <!-- section -->
-        <section></section>
-        <!-- end section -->
+        <!-- popular product section -->
+        <section class="px-4 py-12 md:px-8 md:py-24 2xl:p-[140px] bg-secondary">
+            <h1 class="text-accent font-semibold text-2xl 2xl:text-4xl mb-8 2xl:mb-12">Popular Products</h1>
+            <div>
+                <!-- discount card -->
+                <div
+                    class="relative rounded-lg 2xl:rounded-[10px] bg-linear-to-br from-[#53DB3A] to-[#FFFFFF] px-[26px] pt-[43px] 2xl:px-[8] 2xl:pt-[51px]">
+                    <div>
+                        <div class="mb-[18px] 2xl:mb-[22px]">
+                            <h3 class="font-adlam text-white text-[26px] 2xl:text-8 mb-[18px] 2xl:mb-[22px]"><span
+                                    class="text-secondary">30</span>% off</h3>
+                            <p class="text-xs 2xl:text-base text-textPrimary/70">Discover a world of treats, toys, and
+                                essentials handpicked
+                                for </p>
+                        </div>
+                        <div class="pb-[153px] 2xl:pb-[182px]">
+                            <button
+                                class="px-[25px] py-2 rounded-md 2xl:px-[30px] 2xl:py-2.5 2xl:rounded-lg text-base 2xl:text-lg text-center bg-white">Buy
+                                Now</button>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-0 right-0">
+                        <img class="w-[228px] 2xl:w-full" src="assets/images/vegetable-offer.png" alt="">
+                    </div>
+                </div>
+                <!-- price cards -->
+                <div></div>
+            </div>
+        </section>
+        <!-- end popular product section -->
 
         <!-- section -->
         <section></section>
