@@ -18,13 +18,45 @@
     <!-- Custom Tailwind CSS -->
     <style type="text/tailwindcss">
         @theme {
-            --font-sora: "Sora", sans-serif; 
-            --font-adlam: "ADLaM Display", sans-serif; 
-            --color-accent: #179800;
-            --color-secondary: #EFEBE3;
-            --color-textPrimary: #111111;
+        --font-sora: "Sora", sans-serif; 
+        --font-adlam: "ADLaM Display", sans-serif; 
+        --color-accent: #179800;
+        --color-secondary: #EFEBE3;
+        --color-textPrimary: #111111;
+    }
+
+    @layer utilities {
+        /* for hero section */
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
-    </style>
+        .animate-fadeUp {
+            animation: fadeUp 2.0s ease-out forwards;
+        }
+        /* for services section */
+        @keyframes fadeUpRToL {
+            0% {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-fadeUpRToL {
+            animation: fadeUpRToL 2.0s ease-out forwards;
+        }
+    }
+</style>
 </head>
 <!-- 
     -- px-4 py-3 md:px-8 md:py-6 2xl:px-[140px]
@@ -74,8 +106,8 @@
         </nav>
 
         <!-- hero section -->
-        <section class="mb-[48px] 2xl:mb-[140px]">
-            <div class="text-center px-4 py-3 md:px-8 md:py-6 2xl:px-[140px]">
+        <section class="mb-[48px] 2xl:mb-[140px]   opacity-0 animate-fadeUp delay-200">
+            <div class=" text-center px-4 py-3 md:px-8 md:py-6 2xl:px-[140px]">
                 <h1 class="text-[32px] 2xl:text-[56px] font-semibold pb-4 2xl:pb-8"><span class="text-accent">
                         Freshness You Can</span><br>
                     <span class="text-accent">Count</span> On, Prices You’ll Love!
@@ -94,7 +126,7 @@
     </header>
     <main>
         <!-- service section -->
-        <section class="mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]">
+        <section class="mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]  opacity-0 animate-fadeUpRToL delay-200">
             <div>
                 <h1 class="text-2xl 2xl:text-4xl mb-8 2xl:mb-12 font-semibold text-accent">Services</h1>
             </div>
@@ -151,7 +183,7 @@
         <!-- end service section -->
 
         <!-- popular product section -->
-        <section class="px-4 py-12 md:px-8 md:py-24 2xl:p-[140px] bg-secondary">
+        <section class="px-4 py-12 md:px-8 md:py-24 2xl:p-[140px] bg-secondary  opacity-0 animate-fadeUp delay-200">
             <h1 class="text-accent font-semibold text-2xl 2xl:text-4xl mb-8 2xl:mb-12">Popular Products</h1>
             <div class="lg:flex lg:gap-4 2xl:gap-6">
                 <!-- discount card -->
@@ -300,7 +332,7 @@
         <!-- end popular product section -->
 
         <!-- arrival & offers section -->
-        <section class="mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]">
+        <section class="mx-4 my-12 md:mx-8 md:my-24 2xl:m-[140px]  opacity-0 animate-fadeUpRToL delay-200">
             <h1 class="font-semibold text-accent text-2xl 2xl:text-4xl pb-8 2xl:pb-12">Arrival & Offers</h1>
             <div class="flex flex-col gap-4 lg:gap-5      md:flex-row">
                 <div
@@ -353,7 +385,7 @@
     <footer class="relative mt-[400px] 2xl:mt-[389px]">
         <!-- news section -->
         <section
-            class="absolute bottom-[60%] md:bottom-[30%] lg:bottom- w-full px-4 py-12 md:px-8 md:py-24 2xl:p-[140px]">
+            class="absolute bottom-[60%] md:bottom-[30%] lg:bottom- w-full px-4 py-12 md:px-8 md:py-24 2xl:p-[140px]  opacity-0 animate-fadeUp delay-200">
             <div
                 class="bg-secondary rounded-2xl 2xl:rounded-3xl px-3.5 py-10 2xl:px-[105px] 2xl:py-[55px] text-center lg:text-left flex flex-col lg:flex-row items-center">
                 <div class="mb-6 2xl:mb-0">
@@ -387,9 +419,9 @@
 
         <!-- footer -->
         <section
-            class="bg-accent px-4 pt-[281px] pb-12 md:px-8 md:pt-[400px] 2xl:px-[140px] 2xl:pt-[370px] 2xl:pb-[140px]">
+            class="bg-accent px-4 pt-[281px] pb-12 md:px-8 md:pt-[400px] 2xl:px-[140px] 2xl:pt-[370px] 2xl:pb-[140px]  ">
             <div class="text-white space-y-9 2xl:space-y-0 md:flex justify-between items-center">
-                <div class="space-y-3">
+                <div class="space-y-3  opacity-0 animate-fadeUp delay-200">
                     <div>
                         <img src="assets/images/logo-footer.png" alt="">
                     </div>
@@ -399,12 +431,12 @@
                         handpicked for
                         your furry friends</p>
                 </div>
-                <div class="space-y-5 2xl:space-y-8">
+                <div class="space-y-5 2xl:space-y-8  opacity-0 animate-fadeUp delay-200">
                     <p><a href="">Product</a></p>
                     <p><a href="">Services</a></p>
                     <p><a href="">Contact Us</a></p>
                 </div>
-                <div>
+                <div class="opacity-0 animate-fadeUp delay-200">
                     <p class="text-sm 2xl:text-base pb-3">Follow Us</p>
                     <div class="text-2xl space-x-7">
                         <a href=""><i class="fa-brands fa-facebook"></i></a>
